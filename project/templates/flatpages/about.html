@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{flatpage.title }}</title>
-</head>
-<body>
-{{ flatpage.content }}
-<h2> Skillfactory</h2>
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpages.title }}
+{% endblock title %}
+
+{% block body %}
+{{ flatpages.content }}
+<hr>
+
+{% endblock body %}
