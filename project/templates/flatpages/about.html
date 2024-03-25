@@ -1,11 +1,6 @@
 {% extends 'flatpages/default.html' %}
 
-{% block title %}
-{{ flatpages.title }}
-{% endblock title %}
-
-{% block body %}
-{{ flatpages.content }}
+{% block content %}
+{{ flatpage.content }}
 <hr>
-
-{% endblock body %}
+{% endblock content %}
